@@ -1,0 +1,371 @@
+/*reset geral*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*tags padrao*/
+html, body{height: 100%;}
+
+/*classes auxiliadoras*/
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+/*header*/
+.layer{ 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+
+ }
+section.main{
+	position: relative ;
+	background-image: url('../images/bg3.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	padding: 15px 0;
+	min-height: 800px;
+}
+section.main header{
+	position: relative;
+	z-index: 2;
+	padding-bottom: 10px;
+	border-bottom: 2px solid white;
+}
+/*icones*/
+.icons-social{
+	float: right;
+}
+
+.icons-social a{
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	margin: 0 15px;
+}
+
+/*logo*/
+.logo{
+	margin-top: 20px;
+	float: left;
+	font-size: 21px;
+	color: white;
+	font-weight: bold;
+}
+/*links*/
+.nav-mobile{
+	display: none;
+	float: right;
+}
+.nav-mobile ul{
+	display: none;
+	position: absolute;
+	top: 110px;
+	left: 0;
+	width: 100%;
+	list-style-type: none;
+	background: white;
+	z-index: 999;
+}
+.nav-mobile li{
+	padding: 8px 0;
+	text-align: center;
+	font-weight: lighter;
+	border-bottom: 1px solid black;
+}
+.nav-mobile a{
+	text-decoration: none;
+	display: block;
+	color: grey;	
+}
+.nav-mobile i{
+	color: white;
+	font-size: 25px;
+	margin: 0 2%;
+	cursor: pointer;
+}
+
+.nav-desktop{
+	margin-top: 20px;
+	float: right;
+}
+.nav-desktop ul{
+	list-style-type: none;
+}
+.nav-desktop li{
+	display: inline-block;
+	margin: 0 15px;
+	padding: 15px;
+	font-size: 17px;
+}
+.nav-desktop a{
+	text-decoration: none;
+	color: white;
+}
+/*conteudo header*/
+.content-header{
+	position: relative;
+	z-index: 1 ;
+	margin: 90px 2%;
+	max-width: 700px;
+}
+
+.content-header h1{
+	color: white;
+	font-weight: lighter;
+	font-size: 40px;
+}
+.content-header h1 > span{
+	color: blue;
+}
+.content-header p{
+	color: white;
+	font-weight: lighter;
+	font-size: 16px;
+	margin-top: 18px;
+}
+.content-header a{
+	text-align: center;
+	width: 177px;
+	height: 44px;
+	background: blue;
+	font-size: 16px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	margin-top: 15px;
+	line-height: 45px;
+	border-radius: 60px;
+}
+
+/*chama planos*/
+
+.chamada-planos{
+	width: 100%;
+	text-align: center;
+	padding: 27px 2%;
+	background-color: grey;
+}
+.chamada-planos h2{
+	display: inline-block;
+	color: white;
+	border-top: 2px solid #2692FF;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+
+/*box de cada plano*/
+.box-planos{
+	padding: 40px 0;
+	background-color: rgb(244, 244, 244);
+}
+.box-planos > .center{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.single-plans{
+	width: 33.33%;
+	padding: 0 40px;
+}
+.wraper-singlebox{
+	width: 100%;
+	border: 1px solid #ccc;
+	min-height: 250px;
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+	background-color: white;
+}
+.box-planos h2{
+	background: blue;
+	color: white;
+	text-align: center;
+	padding: 3px;
+	font-weight: lighter;
+}
+.bullets-plans{
+	padding: 8px 0 15px 0;
+}
+.value{
+	margin-top: 10px;
+	padding:  15px 0 ;
+	text-align: center;
+}
+.value h2{
+	font-size: 21px;
+	border-top: 1px solid #ccc;
+	display: inline-block;
+	background-color: transparent;
+	color: #777;
+	padding: 10px 20px;
+}
+.bullets-plans p{
+	color: #777777;
+	font-size: 15px;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+/*paralax*/
+section.parallax{
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	background-image: url('../images/bg4.jpeg');
+	background-size: cover;
+	background-position: center;
+	padding: 30px 2%;
+	background-attachment: fixed;
+}
+section.parallax > .center{
+	position: relative;
+	z-index: 2;
+	margin: 40px auto;
+	max-width: 960px;
+}
+section.parallax h2{
+	text-align: center;
+	color: black;
+} section.parallax p{
+	color: black;
+	margin-top: 15px;
+}
+
+section.overlay-parallax{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(20, 20, 20, 0.6);
+}
+
+/*sessao final*/
+.final{
+	padding: 50px 0;
+}
+section.center{
+
+}
+.w50{
+	float: left;
+	width: 50%;
+	padding: 0 20px;
+	margin: 30px 0;
+}
+.contato h2{
+	font-weight: lighter;
+	color: #777777;
+	font-size: 24px;
+}
+.contato input:not([type=submit]){
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	margin-top: 10px;
+	display: block;
+	font-size: 15px;
+}
+.contato textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	margin-top: 10px;
+	font-size: 15px;
+	resize: none;
+}
+.contato input[type=submit]{
+	cursor: pointer;
+	background-color: blue;
+	border-radius: 20px;
+	color: white;
+	border: 0;
+	width: 100px;
+	height: 40px;
+	margin-top: 15px;
+	font-size: 15px;
+}
+.time > .w50{
+	width: 48%;
+	margin: 30px 1%;
+}
+.time-single{
+	padding: 10px 8px ;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+}
+.time-single .topo-box{
+	padding-bottom: 10px;
+	
+}
+.time-single .box-avatar{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #ccc;
+	vertical-align: middle;
+	/*aplicar imagem do castmember*/
+}
+.info-user{
+	display: inline-block;
+	padding-left: 8px;
+	color: #777;
+	vertical-align: middle;
+	border-bottom: 1px solid #ccc;
+}
+.descricao p{
+	margin-top: 10px;
+	font-weight: lighter;
+	font-size: 15px;
+}
+/* footer*/
+footer{
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: #444;
+	padding: 10px 2%;
+}
+
+/*responsivo*/
+@media screen and (max-width: 768px){
+	.nav-desktop{
+		display: none;
+	}
+	.nav-mobile{
+		display: block;
+		
+	}
+	.single-plans{
+		width: 100%;
+		margin: 30px 2%;
+	}
+	.w50{
+	width: 100%;
+	margin: 15px 2%;
+	}
+	.time > .w50{
+	width: 100%;
+	margin: 15px 0;
+	}
+}
